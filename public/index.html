@@ -1,0 +1,154 @@
+<html>
+  <head>
+  </head>
+  <body>
+    Penis
+  </body>
+</html>
+
+        
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Rocks</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #87CEEB; /* Sky blue background */
+            position: relative;
+            height: 100vh;
+        }
+
+        .rock {
+            position: absolute;
+            top: -50px; /* Start above the view */
+            opacity: 0.8;
+            pointer-events: none;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const rocks = ['balls', 'nuts', 'penis']; // Rock emojis
+        const numberOfRocks = 70;
+
+        for (let i = 0; i < numberOfRocks; i++) {
+            const rock = document.createElement('div');
+            rock.className = 'rock';
+            rock.innerText = rocks[Math.floor(Math.random() * rocks.length)];
+            rock.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+            rock.style.animationDuration = Math.random() * 3 + 2 + 's'; // Random duration
+            rock.style.fontSize = Math.random() * 20 + 15 + 'px'; // Random size
+            document.body.appendChild(rock);
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walking Stick Figure</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #87CEEB; /* Sky blue background */
+            position: relative;
+            height: 100vh;
+        }
+
+        .stick-figure {
+            position: absolute;
+            width: 50px; /* Width of the stick figure */
+            height: 100px; /* Height of the stick figure */
+            animation: walk 2s linear infinite;
+            left: -50px; /* Start off-screen */
+        }
+
+        @keyframes walk {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(100vw); /* Move across the screen */
+            }
+        }
+
+        /* Stick figure styles */
+        .stick-figure::before {
+            content: '';
+            position: absolute;
+            width: 10px; /* Head */
+            height: 10px;
+            border-radius: 50%;
+            background-color: black;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .stick-figure::after {
+            content: '';
+            position: absolute;
+            width: 4px; /* Body */
+            height: 60px;
+            background-color: black;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Arms */
+        .stick-figure .arms {
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: black;
+        }
+
+        /* Legs */
+        .stick-figure .legs {
+            position: absolute;
+            width: 4px;
+            height: 40px;
+            top: 70px;
+            left: 25%;
+            background-color: black;
+            transform: rotate(45deg);
+        }
+
+        .stick-figure .legs:nth-child(2) {
+            left: 50%;
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="stick-figure"></div>
+
+    <script>
+        // Create a stick figure that will walk across the screen
+        const stickFigure = document.createElement('div');
+        stickFigure.className = 'stick-figure';
+        document.body.appendChild(stickFigure);
+    </script>
+</body>
+</html>
+
