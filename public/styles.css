@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #87CEEB; /* Sky blue background */
+    position: relative;
+    height: 100vh;
+}
+
+.rock {
+    position: absolute;
+    top: -50px; /* Start above the view */
+    opacity: 0.8;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    cursor: crosshair; /* Change cursor style */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.caution {
+    font-size: 5em;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden; /* Prevent scroll */
+}
+
+.popup {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    background-color: white;
+    border: 2px solid #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.popup button {
+    padding: 30px 60px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #0056b3;
+}
+
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+    background-color: #ffffff; /* Black background */
+}
+
+.symbol {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.5); /* Semi-transparent white */
+    font-size: 48px; /* Font size */
+    pointer-events: none; /* Prevent mouse events */
+}
+
+
+
+
+
+
+
