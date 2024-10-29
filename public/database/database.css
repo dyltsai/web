@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    height: 100vh; /* Make sure the body takes the full height */
+}
+
+#scoreboard {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}

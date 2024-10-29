@@ -63,7 +63,7 @@ document.addEventListener('mousemove', () => {
 });
 
 document.getElementById('downloadBtn').addEventListener('click', () => {
-    window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1';
+    window.location.href = 'http://127.0.0.1:5500/public/database/database.html';
 });
 
 const symbols = ['𓂸', '𓂸', '𓂸', '𓂸', '𓂸', '𓂸', '𓅓', '§', '𓂀', '𓂀'];
